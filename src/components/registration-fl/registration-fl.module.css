@@ -1,0 +1,229 @@
+.form_wrapper {
+  padding-top: 28px;
+  padding-left: 12px;
+  padding-right: 12px;
+ 
+}
+
+.input_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.input_box {
+  position: relative;
+}
+
+.form_text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 170%;
+}
+.input {
+  background: #fff;
+  padding: 9px 7px 7px;
+  /* закруглим края у поля ввода */
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #a3a3a3;
+  margin-bottom: 12px;
+}
+
+.input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #a3a3a3;
+  opacity: 1;
+}
+
+.input_label {
+  position: absolute;
+  /* смещение относительно родительского элемента 10px вверх от верхнего края и   10px влево */
+  top: -10px;
+  left: 16px;
+  background: #fff;
+  padding: 0 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* modal form reg*/
+
+.check[type="checkbox"] {
+  display: none;
+}
+
+.check_label {
+  display: flex;
+  margin-left: 28px;
+  margin-top: 16px;
+  position: relative;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 170%;
+}
+.check_label::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  background-color: transparent;
+  border: 1px solid #00354b;
+  border-radius: 5px;
+  flex-grow: 0;
+  margin-right: 13px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -27px;
+  bottom: -12px;
+}
+
+.check_label::before {
+  content: "";
+  position: absolute;
+  transition: transform 0.2s ease 0s;
+  width: 14px;
+  height: 14px;
+}
+
+.check[type="checkbox"]:checked + .check_label::before {
+  background-image: url(./images/check.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: -25px;
+  bottom: 0px;
+  z-index: 40;
+}
+
+.input_verification {
+  background-image: url("./images/clip.svg");
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
+}
+
+.button_long {
+  width: 450px;
+  height: 51px;
+  padding: 16px 0px;
+  border-radius: 5px;
+  background-color: var(--btn-blue);
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all 0.3s ease;
+  text-align: center;
+  border: none;
+  margin-top:20px;
+  margin-bottom: 10px;
+}
+
+.button_long:hover,
+.button_long:active {
+  background-color: var(--btn-hover);
+}
+
+@media (max-width: 670px) {
+  .input {
+    background: #fff;
+    padding: 6px 4px 7px;
+    border: 1px solid #a3a3a3;
+    margin-bottom: 12px;
+  }
+
+  .input_label {
+    position: absolute;
+    top: -4px;
+    left: 16px;
+    background: #fff;
+    padding: 0 5px;
+
+    font-size: 5px;
+    line-height: 170%;
+  }
+
+  .input::placeholder {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  /* modal form reg*/
+
+  .check[type="checkbox"] {
+    display: none;
+  }
+
+  .check_label {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 8px;
+    position: relative;
+    cursor: pointer;
+    font-size: 6px;
+    line-height: 10px;
+
+  }
+  .check_label::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+    background-color: transparent;
+    border: 1px solid #00354b;
+    border-radius: 2px;
+    flex-grow: 0;
+    margin-right: 13px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -20px;
+    bottom: -12px;
+  }
+
+  .check_label::before {
+    content: "";
+    position: absolute;
+    transition: transform 0.2s ease 0s;
+    width: 10px;
+    height: 10px;
+  }
+
+  .check[type="checkbox"]:checked + .check_label::before {
+    background-image: url(./images/check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: -18px;
+    bottom: 0px;
+    z-index: 40;
+  }
+
+  .button_long {
+    width: 262px;
+    height: 24px;
+    padding: 7px 0px;
+    font-size: 8px;
+    line-height: 9px;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    margin-top: 12px;
+  }
+}

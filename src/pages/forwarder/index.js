@@ -1,0 +1,1 @@
+export { ForwarderPage } from './forwarder';

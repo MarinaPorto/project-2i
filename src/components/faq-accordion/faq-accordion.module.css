@@ -1,0 +1,58 @@
+.ac_wrapper {
+  width: 100%;
+}
+
+.item_wrapper {
+  width: 100%;
+  border-bottom: 1px solid #c4d1d6;
+}
+
+.ac_wrapper button {
+  background-color: transparent;
+  border: none;
+  padding: 20px 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 95%;
+  text-align: left;
+  padding-right: 60px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  padding-left: 60px;
+  padding-right: 30px;
+  padding-bottom: 18px;
+}
+
+@media (max-width: 768px) {
+  .ac_wrapper button {
+    font-size: 16px;
+    line-height: 95%;
+  }
+
+  .text {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ac_wrapper button {
+    font-size: 12px;
+    line-height: 130%;
+    padding: 10px 30px;
+  }
+
+  .text {
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+  }
+}

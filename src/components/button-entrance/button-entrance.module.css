@@ -1,0 +1,31 @@
+.btnEntrance {
+  width: 100px;
+  height: 51px;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  padding: 16px 32px;
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+.btnEntrance:hover,
+.btnEntrance:active {
+  background-color: rgba(0, 53, 75, 0.23);
+}
+
+@media (max-width: 480px) {
+  .btnEntrance {
+    padding: 8px 16px;
+    width: 48px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+  }
+}

@@ -1,0 +1,123 @@
+.darkBG {
+  background-color: #00354b;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.modal {
+  width: 640px;
+  background: #fafcfc;
+  color: #00354b;
+  z-index: 10;
+  border: 18px solid #c4d1d6;
+  padding-bottom: 34px;
+}
+
+.modalHeader {
+  overflow: hidden;
+  padding: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.modalContent {
+  padding: 10px 14px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #2c3e50;
+}
+
+.button_long {
+  width: 576px;
+  height: 51px;
+  padding: 16px 0px;
+  border-radius: 5px;
+  background-color: var(--btn-blue);
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all 0.3s ease;
+  text-align: center;
+  border: none;
+  margin-top: 40px;
+}
+
+.button_long:hover,
+.button_long:active {
+  background-color: var(--btn-hover);
+}
+
+@media (max-width: 670px) {
+  .centered {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+  }
+  .modal {
+    width: 300px;
+    border: 6px solid #c4d1d6;
+  }
+
+  .modalHeader {
+    overflow: hidden;
+    padding: 14px 10px;
+  }
+
+  .heading {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .modalContent {
+    padding: 10px 14px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .actionsContainer {
+    padding-left: 14px;
+    padding-right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .button_long {
+    width: 262px;
+    height: 24px;
+    padding: 7px 0px;
+    font-size: 8px;
+    line-height: 9px;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    margin-top: 20px;
+  }
+}

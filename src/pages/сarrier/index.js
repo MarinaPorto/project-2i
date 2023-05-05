@@ -1,0 +1,1 @@
+export { CarrierPage } from './сarrier';
