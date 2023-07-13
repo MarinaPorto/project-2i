@@ -1,0 +1,140 @@
+.nav__list {
+  display: flex;
+  color: #00354b;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  width: 882px;
+  max-width: 882px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.subitem {
+  position: relative;
+}
+.nav__submenu {
+  padding: 17px 14px 12px;
+  border-radius: 5px;
+  width: 330px;
+  background-color: #fff;
+  position: absolute;
+  top: 36px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nav__subitem {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+
+.nav__submenu_hidden {
+  display: none;
+}
+
+.img_up {
+  transform: rotate(180deg);
+  order: -1;
+}
+
+.img_order {
+  order: -1;
+}
+
+@media (max-width: 1520px) {
+  .nav__list {
+    max-width: 770px;
+  }
+}
+
+@media (max-width: 1460px) {
+  .nav__list {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .nav__list {
+    max-width: 600px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .nav__list {
+    order: 4;
+  }
+  .nav__submenu {
+    right: -126px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__list {
+    /* transform: translateX(-120%); */
+    display: none;
+  }
+  .nav__list.active {
+    /* transform: translateX(0); */
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 327px;
+    background-color: #fff;
+    border-radius: 0px 0px 5px 5px;
+    padding: 20px;
+    height: 100vh;
+    z-index: 30;
+  }
+
+  .nav__list.active .nav__item {
+    padding: 10px 0;
+  }
+
+  .nav__submenu {
+    right: 0px;
+    width: 100%;
+    filter: none;
+    width: 327px;
+    left: -20px;
+    padding-left: 40px;
+    padding-top: 0;
+  }
+
+  .nav__subitem {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav__list.active {
+    width: 290px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .nav__submenu {
+    width: 290px;
+    padding-left: 30px;
+  }
+  .nav__list.active .nav__item {
+    padding: 5px 0;
+  }
+  .nav__subitem {
+    padding: 5px 0;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

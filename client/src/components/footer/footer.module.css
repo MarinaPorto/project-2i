@@ -1,0 +1,15 @@
+.footer {
+  padding: 0px 0px 30px;
+  background-color: var(--bg-dark-blue);
+  background-color: #002332;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 460px) {
+  .footer {
+    padding: 10px 0px;
+  }
+}

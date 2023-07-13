@@ -1,0 +1,395 @@
+.darkBG {
+  background-color: #00354b;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+.centered {
+  opacity: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c4d1d6;
+}
+
+.modal {
+  width: 944px;
+  height: 797px;
+  background: #fafcfc;
+  color: #00354b;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.modalHeader {
+  height: 50px;
+  background-color: #c4d1d6;
+  overflow: hidden;
+  padding: 12px 32px;
+  border-radius: 5px 5px 0 0;
+  text-align: right;
+}
+
+.heading {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.modalContent {
+  padding: 10px;
+  font-size: 14px;
+  color: #2c3e50;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.modalContent p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  padding-right: 40px;
+}
+
+.modalActions {
+  position: absolute;
+  bottom: 2px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.actionsContainer {
+  padding-right: 48px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.registration__items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.registration__item {
+  width: 272px;
+  height: 201px;
+  padding-top: 40px;
+  background-color: #c4d1d6;
+  font-size: 16px;
+  line-height: 19px;
+  color: #00354b;
+  position: relative;
+  border-radius: 5px;
+}
+
+.item__logo path {
+  fill: #00354b;
+}
+
+/* modal form reg*/
+
+.form-check-label {
+  display: flex;
+}
+
+.form-check {
+  min-width: 100%;
+}
+
+.regisr_type__radio[type="radio"] {
+  display: none;
+}
+
+.regisr_type__label {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.regisr_type__label::after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  background-color: transparent;
+  border: 2px solid #00354b;
+  border-radius: 50%;
+  flex-grow: 0;
+  margin-right: 13px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 35px;
+  bottom: -14px;
+  text-align: right;
+}
+
+.regisr_type__label::before {
+  content: "";
+  position: absolute;
+  transition: transform 0.2s ease 0s;
+}
+
+.regisr_type__radio[type="radio"]:checked + .regisr_type__label::before {
+  width: 14px;
+  height: 14px;
+  background-color: #c4d1d6;
+  border-radius: 50%;
+  position: absolute;
+  left: -29px;
+  bottom: 4px;
+  z-index: 100;
+}
+
+.registration__item.active {
+  background-color: #00354b;
+  color: #fff;
+}
+
+.registration__item.active .item__logo path {
+  fill: #fafcfc;
+}
+
+.registration__item.active .regisr_type__label::after {
+  border: 2px solid #fafcfc;
+}
+
+@media (max-width: 978px) {
+  .modal {
+    width: 586px;
+    height: 495px;
+    overflow-y: scroll;
+  }
+
+  .modalHeader {
+    height: 30px;
+    padding: 7px 19px;
+  }
+
+  .heading {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .modalContent {
+    padding: 19px;
+    font-size: 14px;
+    color: #2c3e50;
+    text-align: center;
+    padding-top: 32px;
+  }
+
+  .modalContent p {
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 19px;
+    padding-right: 10px;
+  }
+
+  .modalActions {
+    position: absolute;
+    bottom: 2px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .actionsContainer {
+    padding-right: 20px;
+    padding-left: 19px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 14px;
+  }
+
+  .registration__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0;
+    margin-bottom: 30px;
+    margin-top: 13px;
+  }
+
+  .registration__item {
+    width: 168px;
+    height: 124px;
+    padding-top: 27px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .item__logo {
+    height: 62px;
+  }
+
+  .item__logo path {
+    fill: #00354b;
+  }
+  .item__logo.item__logo_forwarder {
+    height: 46px;
+    margin-bottom: 16px;
+  }
+
+  .regisr_type__label {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  .regisr_type__label::after {
+    width: 16px;
+    height: 16px;
+    right: 0px;
+    bottom: -11px;
+  }
+
+  .regisr_type__label::before {
+    content: "";
+    position: absolute;
+    transition: transform 0.2s ease 0s;
+  }
+
+  .regisr_type__radio[type="radio"]:checked + .regisr_type__label::before {
+    width: 10px;
+    height: 10px;
+    left: -22px;
+    bottom: 4px;
+  }
+}
+
+@media (max-width: 606px) {
+  .modal {
+    width: 300px;
+    height: 270px;
+  }
+
+  .modalHeader {
+    height: 16px;
+    padding: 3px 10px;
+  }
+
+  .heading {
+    font-size: 8px;
+    line-height: 9px;
+  }
+
+  .modalContent {
+    padding: 10px;
+
+    padding-top: 12px;
+  }
+
+  .modalContent p {
+    font-size: 8px;
+    line-height: 9px;
+    padding-left: 10px;
+  }
+
+  .modalActions {
+    position: absolute;
+    bottom: 2px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .actionsContainer {
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0px;
+  }
+
+  .registration__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0;
+    margin-bottom: 13px;
+    margin-top: 8px;
+  }
+
+  .registration__item {
+    width: 86px;
+    height: 63px;
+    padding-top: 14px;
+    font-size: 6px;
+    line-height: 7px;
+  }
+
+  .item__logo {
+    height: 28px;
+  }
+
+  .item__logo.item__logo_forwarder {
+    width: 37px;
+    height: 24px;
+    margin-bottom: 6px;
+  }
+
+  .regisr_type__label {
+    display: flex;
+    margin-left: 8px;
+    margin-top: 6px;
+    position: relative;
+    cursor: pointer;
+  }
+  .regisr_type__label::after {
+    width: 8px;
+    height: 8px;
+    right: 0px;
+    bottom: -13px;
+    border: 1px solid #00354b;
+  }
+
+  .regisr_type__label::before {
+    content: "";
+    position: absolute;
+    transition: transform 0.2s ease 0s;
+  }
+
+  .regisr_type__radio[type="radio"]:checked + .regisr_type__label::before {
+    width: 5px;
+    height: 5px;
+    left: -10px;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .modal {
+    width: 300px;
+    height: 253px;
+  }
+
+  .centered {
+    top: 30%;
+    left: 50%;
+  }
+}

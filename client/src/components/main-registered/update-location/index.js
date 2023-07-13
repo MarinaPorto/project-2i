@@ -1,0 +1,1 @@
+export { LocationUpdate } from './update-location';

@@ -1,0 +1,30 @@
+.btn {
+  width: 160px;
+  height: 51px;
+  padding: 16px 0px;
+  border-radius: 5px;
+  background-color: var(--btn-blue);
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all 0.3s ease;
+  text-align: center;
+  margin-left: auto;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--btn-hover);
+}
+
+@media (max-width: 540px) {
+  .btn {
+    width: 78px;
+    height: 24px;
+    padding: 8px 0px;
+    font-size: 8px;
+    line-height: 9px;
+  }
+}

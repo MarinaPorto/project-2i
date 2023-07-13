@@ -1,0 +1,94 @@
+.input_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+}
+.input_box {
+  position: relative;
+}
+.input_box_fl {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 170%;
+}
+.input {
+  background: #fff;
+  padding: 6px 4px 4px;
+  border-radius: 5px;
+  width: 100px;
+  border: 1px solid #a3a3a3;
+}
+
+.input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #a3a3a3;
+  opacity: 1;
+}
+
+.button_long {
+  width: 24px;
+  height: 24px;
+  padding: 12px 0px;
+  border-radius: 5px;
+  background-color: var(--btn-blue);
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  transition: all 0.3s ease;
+  text-align: center;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_long:hover,
+.button_long:active {
+  background-color: var(--btn-hover);
+}
+
+.success_message {
+  color: #29c065;
+}
+.unsuccess_message {
+  color: #ff4b56;
+}
+
+@media (max-width: 1256px) {
+  .input_wrapper {
+    width: 120px;
+  }
+  .input {
+    width: 80px;
+  }
+  .button_long {
+    width: 20px;
+    height: 20px;
+    padding: 0px 0px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .input_wrapper {
+    width: 100px;
+  }
+  .input {
+    width: 70px;
+  }
+  .button_long {
+    width: 20px;
+    height: 20px;
+    padding: 0px 0px;
+  }
+}

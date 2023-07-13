@@ -1,0 +1,67 @@
+.main {
+  display: flex;
+  padding-left: 73px;
+}
+
+.btn {
+  width: 160px;
+  height: 51px;
+  padding: 16px 32px;
+  border-radius: 5px;
+  background-color: var(--btn-blue);
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--btn-hover);
+}
+
+.notfound {
+  font-size: 16px;
+  color: #00354b;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.deleted {
+  height: 100vh;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #00354b;
+  font-size: 20px;
+}
+
+@media (max-width: 1020px) {
+  .main {
+    display: flex;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 825px) {
+  .logo {
+    margin-right: 90px;
+  }
+}
+
+@media (max-width: 938px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .header {
+    padding-top: 24px;
+  }
+}

@@ -1,0 +1,156 @@
+.contacts_wrapper {
+  background-color: #002332;
+  padding: 86px 0px 30px;
+  text-align: right;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: left;
+  padding-left: 174px;
+}
+.item_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.info {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  margin-top: 32px;
+}
+
+.item_subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.nav__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 20px;
+}
+
+.nav__item:hover {
+  color: #008cc9;
+}
+
+.contacts_items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 32px;
+}
+
+.item_text,
+.list__item {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.item_text {
+  margin-bottom: 12px;
+}
+
+.list__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+/* @media (max-width: 1032px) {
+  .contacts_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    margin-top: 20px;
+  }
+} */
+
+/* @media (max-width: 900px) {
+  .title {
+    padding-left: 0;
+  }
+} */
+
+@media (max-width: 768px) {
+  .contacts_wrapper {
+    padding: 40px 0px 20px;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 42px;
+    padding-left: 0;
+  }
+  .item_title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 20px;
+  }
+  .item_subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .contacts_items {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+  }
+
+  .contacts_wrapper {
+    padding: 20px 0px 10px;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+  }
+  .item_title {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+    margin-top: 12px;
+  }
+
+  .info {
+    display: none;
+  }
+  .nav__item {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 8px;
+  }
+
+  .info__visible {
+    display: block;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 9px;
+    margin-top: 0px;
+    padding-top: 10px;
+  }
+
+  .item_subtitle {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 12px;
+    margin-top: 6px;
+  }
+}

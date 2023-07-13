@@ -1,0 +1,43 @@
+.main__stages_wrapper {
+  background-color: var(--bg-dark-blue);
+  padding: 80px 0px 80px 0px;
+  text-align: right;
+}
+
+.title {
+  padding-right: 150px;
+}
+
+.cards__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  justify-content: end;
+}
+
+@media (max-width: 1000px) {
+  .main__stages_wrapper {
+    padding: 40px 0px 42px 0px;
+  }
+  .title {
+    padding-right: 0px;
+  }
+  .cards__wrapper {
+    gap: 30px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 540px) {
+  .main__stages_wrapper {
+    padding: 20px 0px 20px;
+  }
+
+  .cards__wrapper {
+    gap: 12px;
+    margin-top: 13px;
+    margin-bottom: 20px;
+  }
+}
